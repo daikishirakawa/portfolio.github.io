@@ -2,21 +2,206 @@
     margin: 0;
     padding: 0;
     line-height: 30px
+ 
 }
 
-main {
+body {
     background-color: cornflowerblue;
     padding-bottom: 100px;
+    background-size: 100%;
+   
 }
 
-.im {
-    width: auto;
-    height: auto;
+
+
+
+
+.top {
+    background-image: url("IMG_3521.jpg");
+    height: 350px;
+    background-size: cover;
+}
+.profile {
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url("IMG_0384.jpeg");
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    color: white;
+    
 }
 
-.create {
-    padding-bottom: 30px;
+  .profile:before{
+    content: '';
+    background: inherit;
+    -webkit-filter: blur(8px);
+    -moz-filter: blur(8px);
+    -o-filter: blur(8px);
+    -ms-filter: blur(8px);
+    filter: blur(8px);
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+  }
+
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background-color: cornflowerblue;
+    box-shadow: 0 2px 6px rgba(0,0,0,.16);
+  }
+  .global-nav {
+    position: fixed;
+    right: -320px; /* これで隠れる */
+    top: 0;
+    width: 300px; /* スマホに収まるくらい */
+    height: 100vh;
+    padding-top: 40px;
+    background-color: #fff;
+    transition: all .6s;
+    z-index: 200;
+    overflow-y: auto; /* メニューが多くなったらスクロールできるように */
+  }
+  .hamburger {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 40px; /* クリックしやすいようにちゃんと幅を指定する */
+    height: 40px; /* クリックしやすいようにちゃんと高さを指定する */
+    cursor: pointer;
+    z-index: 300;
+  }
+  .global-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .global-nav__item {
+    text-align: center;
+    padding: 0 14px;
+  }
+  .global-nav__item a {
+    display: block;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    color: #111;
+  }
+  .global-nav__item a:hover {
+    background-color: #eee;
+  }
+  .hamburger__line {
+    position: absolute;
+    left: 11px;
+    width: 18px;
+    height: 1px;
+    background-color: #111;
+    transition: all .6s;
+  }
+  .hamburger__line--1 {
+    top: 14px;
+  }
+  .hamburger__line--2 {
+    top: 20px;
+  }
+  .hamburger__line--3 {
+    top: 26px;
+  }
+  .black-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+    cursor: pointer;
+  }
+  /* 表示された時用のCSS */
+  .nav-open .global-nav {
+    right: 0;
+  }
+  .nav-open .black-bg {
+    opacity: .8;
+    visibility: visible;
+  }
+  .nav-open .hamburger__line--1 {
+    transform: rotate(45deg);
+    top: 20px;
+  }
+  .nav-open .hamburger__line--2 {
+    width: 0;
+    left: 50%;
+  }
+  .nav-open .hamburger__line--3 {
+    transform: rotate(-45deg);
+    top: 20px;
+  }
+  
+.header h1 {
+    padding: 10px;
+    
 }
+
+h2 {
+    padding: 15px 0;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    
+  }
+  
+  table tr{
+    border-bottom: solid 1px #eee;
+    cursor: pointer;
+  }
+  
+  table tr:hover{
+    background-color: midnightblue;
+  }
+  
+  table th,table td{
+    text-align: left;
+    width: 25%;
+    padding: 15px 0;
+  }
+.title-width {
+    width: 7%;
+}
+
+  
+
+
+img {
+    width: 100%;
+    height: 100%;
+    
+}
+.present {
+    width: 50%;
+    position: absolute; top: 10%; left: 4%;
+
+    
+}
+
+
+
 
 @media(max-width: 414px) {
     img {
@@ -34,18 +219,7 @@ main {
     .capacity {
         line-height: 50px;
     }
-    .past1 {
-        
-        
-    }
-    .past2 {
-       
-        
-    }
-    .past3 {
-        
-        padding-bottom: 70px;
-        
-    }
+
+ 
     
 }

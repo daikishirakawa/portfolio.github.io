@@ -3,31 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>g MY PROFILE</title>
-    <link rel="stylesheet" href="https://daikishirakawa.github.io/portfolio.github.io/portfolio.css">
+    <title>MY PROFILE</title>
+    <link rel="stylesheet" href="portfolio.css">    
 </head>
 <body>
-    <main>
-    <h1>About Me</h1>
-    <img src="IMG_3521.jpg">
-    <div class="contents">
-        <p class="name">名前：しろ</p>
-        <p class="age">年齢：25歳</p>
-        <p class="gender">性別：男</p>
-        <p class="job">職業：中学校保健体育教員　正規採用</p>
-        <p class="capacity">所有資格：行動心理士</p>
-        <p class="past1">経歴：高校時代 国体に選抜され全国準優勝。<br>日本代表選考会に招待される</p>          
-        <p class="past2">大学時代 日本代表も在籍する40名超の部活でキャプテン。九州最優秀選手賞を受賞</p>
-        <p class="past3">社会人 成年男子国体代表。8年振りの全国大会出場に正選手として貢献。</p>
-    </div>
 
-    <h2>あなたの会社に役立つ３つの理由</h2>
-    <div class="reason"><a href="https://daikishirakawa.github.io/portfolio.github.io/threereson.html">あなたの会社に役立つ3つの理由はこちら。</a></div>
+        <header class="header">
 
-    <h2>制作物</h2>
-    <div class="create"><a href="https://daikishirakawa.github.io/portfolio.github.io/create.html">HTML CSS JavaScriptでの制作物はこちら</a></div>
-    <p>最後までみていただき、ありがとうございました。</p>
-    </main>
+            <h1>About Me</h1>
+            <nav class="global-nav">
+                <ul class="global-nav__list">
+                  <li class="global-nav__item"><a href="threereson.html">会社に役立つ3つの理由</a></li>
+                  <li class="global-nav__item"><a href="create.html">制作物</a></li>
+                </ul>
+              </nav>
+              <div class="hamburger" id="js-hamburger">
+                <span class="hamburger__line hamburger__line--1"></span>
+                <span class="hamburger__line hamburger__line--2"></span>
+                <span class="hamburger__line hamburger__line--3"></span>
+              </div>
+              <div class="black-bg" id="js-black-bg"></div>
+        </header>    
+        <div class="top">
+
+
+        </div>
+        
+        
+        <div class="profile">
+            
+            <h2>Profile</h2>
+            <p>1995年生まれの現在25歳男性。中学校の体育教員になり4年目になりました。</p>
+            <table>
+                <tr>
+                  <th class="title-width">経歴</th>
+                  <th class="contents-width">実績</th>
+                </tr>
+                <tr>
+                  <td class="title-width">高校時代</td>
+                  <td class="contents-width">ハンドボール国体代表。<br>全国準優勝。</td> 
+                </tr>
+                <tr>
+                  <td class="title-width">大学時代</td>
+                  <td class="contents-width">日本代表も在籍する40名超の部で、キャプテン。九州MVPを獲得。</td> 
+                </tr>
+                <tr>
+                  <td class="title-width">現在</td>
+                  <td class="contents-width">ハンドボール成年男子国体代表。<br>8年ぶりの本選出場に貢献。<br>教員採用1年目で51名の前での授業者に選出される。<br>43名の教員の前で代表して講義を行う。</td> 
+                </tr>
+              </table>
+        </div>
+
+
+        </div>
+
+        <h2>あなたの会社に役立つ３つの理由</h2>
+        <div class="reason"><a href="threereson.html">あなたの会社に役立つ3つの理由はこちら。</a></div>
+
+        <h2>制作物</h2>
+        <div class="create"><a href="create.html">HTML CSS JavaScriptでの制作物はこちら</a></div>
+        <p>最後までみていただき、ありがとうございました。</p>
     
+    <script src="portfolio.js"></script>
 </body>
 </html>

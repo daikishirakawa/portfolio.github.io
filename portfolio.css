@@ -17,7 +17,7 @@ body {
 
 
 .top {
-    background-image: url("IMG_3521.jpg");
+    background-image: url("https://daikishirakawa.github.io/portfolio.github.io/IMG_3521.jpg");
     height: 350px;
     background-size: cover;
 }
@@ -26,7 +26,7 @@ body {
     height: 100%;
     width: 100%;
     box-sizing: border-box;
-    background-image: url("IMG_0384.jpeg");
+    background-image: url("https://daikishirakawa.github.io/portfolio.github.io/IMG_0384.jpeg");
     background-size: cover;
     position: relative;
     z-index: 0;

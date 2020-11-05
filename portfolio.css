@@ -196,8 +196,10 @@ img {
 .present {
     width: 50%;
     position: absolute; top: 10%; left: 4%;
+}
 
-    
+a:hover {
+    color: white;
 }
 
 
@@ -219,7 +221,13 @@ img {
     .capacity {
         line-height: 50px;
     }
+}
 
- 
-    
+@media(min-width: 414px) {
+  .top {
+    height: 100vh;
+  }
+  .hamburger {
+    display: none;
+  }
 }
